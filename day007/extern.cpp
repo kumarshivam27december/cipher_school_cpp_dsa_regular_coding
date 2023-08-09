@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
-int x = 10;
+int x = 21;
 int main()
 {
-    // int x = 5;
-    cout<<::x<<endl;
-    cout<<x<<endl;
+    extern int x;
+    x= 9;
+    cout<<::x<<endl<<x<<endl;
           return 0;
 }
