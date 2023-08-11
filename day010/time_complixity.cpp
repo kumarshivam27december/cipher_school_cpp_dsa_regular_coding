@@ -1,0 +1,6 @@
+/*
+the term time complexity can be defined as the amount of time taken by a procedure or algorithm who
+execute as a function of size of input usually represented by N. 
+
+
+*/
