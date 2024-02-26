@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hunter.js"></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <p class="demo"></p>
+    <input type="button" value="Internal" onclick="sayhello()" onmouseleave="alert('hi everyone')">
+    <br>
+    <script>
+        const a = 2;
+        const b = 3;
+    /*  let a = 2;
+        let b = 3;
+        var a = 2;
+        var b = 3; */
+        let k = 5;
+        for(i=1;i<=10;++i){
+            document.write(k + " * "+i+" = ",k*i);
+            document.write("<br>");
+        }
+
+        let p = 5;
+        let q = 4;
+        document.write("sum of "+p+" and "+q+" is ",p+q); 
+        document.write("<br>");
+
+        document.write("diffence of "+p+" and "+q+" is ",p-q); 
+        document.write("<br>");
+
+        document.write("multiplication of "+p+" and "+q+" is ",p*q); 
+        document.write("<br>");
+
+        document.write("division of "+p+" and "+q+" is ",p/q); 
+        document.write("<br>");
+
+        document.write("remainder of "+p+" and "+q+" is ",p%q); 
+        document.write("<br>");
+
+
+        //document.write(a+b);
+        console.log(a+b);
+        window.alert();
+    </script>
+</body>
+</html>
+

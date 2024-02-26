@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursive table</title>
+</head>
+<body>
+    <script>
+        function table(a,n){
+            if(n<=0) return ;
+            table(a,n-1);
+            document.write(a + "*" + n +" = "+ (a*n)+"<br>");
+        }
+        table(999,999);  
+    </script>
+</body>
+</html>

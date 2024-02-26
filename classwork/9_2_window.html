@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+
+<!--
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myfunction()">
+    <script>
+        function myfunction(){
+            alert("page is loaded successfully");
+        }
+    </script>
+</body>
+</html>
+
+
+//make image slideshow  
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slideshow</title>
+    <style type="text/css">
+        #slideshow {
+            position: relative;
+            height: 450px;
+        }
+        img {
+            display: none; /* Hide the images initially */
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0; /* Cover the whole container */
+        }
+        /* Show an image when thumbnail is hovered over */
+        .thumb:hover > img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- The Container for the Image and Thumbnails -->
+    <div class="container" id="slideshow">
+        <!-- The Image in the middle of the container, positioned relative to show the thumbnails in front -->
+        <img src="http://placekitten.com/g/200/300" alt="A kitten playing a piano" />
+        <!-- Add more images here -->
+        <!-- <img src="image2.jpg" alt="Another cute kitten" /> --> 
+        <!-- <img src="image3.jpg" alt="Yet another adorable kitten" />
+        <!-- The Thumbnails in the bottom layer, absolute positioned so we can adjust their size without affecting the image -->
+        <!-- Add more thumbnails here -->
+        <!-- <div class="thumb"><img src="thumbnail1.jpg" alt="Thumbnail 1" /></div> -->
+        <!-- <div class="thumb"><img src="thumbnail2.jpg" alt="Thumbnail 2" /></div> -->
+        <!-- <div class="thumb"><img src="thumbnail3.jpg" alt="Thumbnail 3" /></div> -->
+    </div>
+</body>
+</html>

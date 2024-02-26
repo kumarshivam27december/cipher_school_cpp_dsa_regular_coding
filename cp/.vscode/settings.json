@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        ".env*": "dotenv",
+        "iostream": "cpp",
+        "new": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp",
+        "random": "cpp"
+    }
+}

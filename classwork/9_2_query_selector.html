@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Query selector</h2>
+    <p class="one" id="intro">hello how are you ?</p>
+    <p class="one" id="demo">welcome</p>
+    <p class="two">Hello world</p>
+    <img src="img1.jpg" alt="" />
+    <script>
+      const c = document.querySelectorAll("p.one");
+      let d = c.length;
+      document.write("<br>" + d);
+      document.write(c.innerHTML);
+
+      // Selecting the image using querySelector
+      const img = document.querySelector("img");
+
+      // Changing the image source
+      img.src = "img5.jpg"; // Replace 'new-image.jpg' with the new image file path
+      img.alt = "this_is_new_image"; // Replace with the new image description
+    
+    document.getElementsByTagName( "img" ).src = "img4.jpg";
+    
+    </script>
+  </body>
+</html>
+

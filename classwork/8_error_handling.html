@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Division Calculator</title>
+  </head>
+  <body>
+    <script>
+      function performDivision() {
+        try {
+          // Take input from the user
+          var a = parseFloat(document.getElementById("numerator").value);
+          var b = parseFloat(document.getElementById("denominator").value);
+
+          // Check if input is null
+          if (isNaN(a) || isNaN(b)) {
+            throw new Error("Error: No input given.");
+          }
+
+          // Check if b > a
+          if (b > a) {
+            throw new Error("Error: Divisor is greater than the numerator.");
+          }
+
+          // Check if b is 0
+          if (b === 0) {
+            throw new Error("Error: Division by zero is not possible.");
+          }
+
+          // Perform the division
+          var result = a / b;
+
+          // Display the result
+          alert("The result of " + a + " / " + b + " is: " + result);
+        } catch (error) {
+          alert(error.message);
+        }
+      }
+    </script>
+
+    <h2>Division Calculator</h2>
+
+    <label for="numerator">Enter the numerator (a): </label>
+    <input type="text" id="numerator" />
+
+    <br />
+
+    <label for="denominator">Enter the denominator (b): </label>
+    <input type="text" id="denominator" />
+
+    <br />
+
+    <button onclick="performDivision()">Perform Division</button>
+  </body>
+</html>
+
+<!-- 
+
+1)take 2 input from user and perform division
+a,b c = 1/b;
+2)if input is null, throw error message no input given
+3)if b>a throw error divisor is greater than number
+4)if b==0 throw error division not possible
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

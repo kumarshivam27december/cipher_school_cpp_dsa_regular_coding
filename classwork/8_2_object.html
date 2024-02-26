@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object in javascript</title>
+  </head>
+  <body>
+    <script>
+      const student = {
+        name: "parveen",
+        Class: "INT219",
+        age: 30,
+        course: function () {
+          document.write("class is going on");
+        },
+      };
+
+      document.write(student.age);
+      document.write("<br>");
+      delete student.age;
+      document.write(student["age"]);
+      document.write("<br>");
+      student.course();
+      document.write("<br>");
+      student.domain = "K22LL";
+      document.write("<br>");
+      document.write(student.domain);
+      document.write("<br>");
+    </script>
+  </body>
+</html>

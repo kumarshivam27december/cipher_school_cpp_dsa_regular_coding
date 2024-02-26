@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event listener</title>
+</head>
+<body>
+    <button id="1">click</button>
+    <button onclick="func1()">click me</button>
+    <script>
+        document.getElementById("1").addEventListener("click", function() {
+            document.body.style.backgroundColor = "lightblue"; // Change the color as per your requirement
+        });
+        document.removeEventListener("click");
+        function func1(){
+            alert("hello world");
+        }
+        let counter = 0,c = 5;
+        const intervalid = setInterval(function(){
+            if(counter<=c){
+                
+            }
+        })
+        setTimeout(func1,1000);
+    </script>
+</body>
+</html>

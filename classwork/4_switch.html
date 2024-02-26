@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a new Date object
+var today = new Date();
+
+// Get the day, month, and year
+var day = today.getDate();
+var month = today.getMonth() + 1; // Months are zero indexed, so we add 1
+var year = today.getFullYear();
+
+    switch(day){
+        
+    }
+// Use a switch statement to print the current date
+switch (month) {
+  case 1:
+    document.write("January " + day + ", " + year);
+    break;
+  case 2:
+    document.write("February " + day + ", " + year);
+    break;
+  case 3:
+    document.write("March " + day + ", " + year);
+    break;
+  case 4:
+    document.write("April " + day + ", " + year);
+    break;
+  case 5:
+    document.write("May " + day + ", " + year);
+    break;
+  case 6:
+    document.write("June " + day + ", " + year);
+    break;
+  case 7:
+    document.write("July " + day + ", " + year);
+    break;
+  case 8:
+    document.write("August " + day + ", " + year);
+    break;
+  case 9:
+    document.write("September " + day + ", " + year);
+    break;
+  case 10:
+    document.write("October " + day + ", " + year);
+    break;
+  case 11:
+    document.write("November " + day + ", " + year);
+    break;
+  case 12:
+    document.write("December " + day + ", " + year);
+    break;
+  default:
+    document.write("Invalid month");
+}
+
+    </script>
+</body>
+</html>

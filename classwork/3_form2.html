@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Users Form
+        </title>
+        <style>
+            input[text]{
+                background-color: black;
+            }
+            body{
+                background-color: white;
+            }
+            .heading{
+                text-align: center;
+            }
+            .submit-button{
+                text-align: center;
+            }
+            .form1{
+                background-color: pink;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">Users Form</h1>
+        <form class="form1" action="/submit-google.com" style="border: 1px solid black;">
+            <label>Enter your first name</label><br>
+            <input type="text" name="intro" id="firstname" placeholder="Enter your first name here"><br>
+            <label>Enter your last name</label><br>
+            <input type="text" name="intro" id="lastname" placeholder="Enter your last name here"><br>
+            <label><strong>Note:</strong>The default max character size is 20.</label><br>
+            <label for="age">Enter your age here</label>
+            <input type="number" name="num" min="18" max="80" id="age" placeholder="Enter your age here"><br>
+            <label for="email">Enter your email </label>
+            <input type="email" name="email" id="email-1" placeholder="xyz@email.com" required><br>
+            <label for="anotheremail"><strong>Enter your another email</strong></label>
+            <input type="email" name="anotheremail" id="anotheremail"><br>
+            <label for="file">Select file to upload</label>
+            <input type="file" name="file" id="file" placeholder="choose file">
+            <label for="URL">Enter your  website URL: </label>
+            <input type="URL" name="URL" id="URL">
+            
+            <br>
+            <label for="date">Enter Month-year: </label>
+            <input type="date" id="date"><br>
+
+            <label for="tel"><strong>Enter  your telephone Number (in format of xxx-xxx-xxxx) : </strong></label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" title="Phone number in the format xxx-xxx-xxxx" required>
+            <br>
+
+            <label for="week"><strong>Select your best week of year</strong> </label>
+            <input type="week" name="week" id="week">
+            <br>
+            <label for="color">pick your favorite color:</label><br>
+            <input type="color" name="color" id="color1"><label for="upclick"> upclick</label><br>
+            <input type="color" name="color" id="color2"><label for="downclick"> downclick</label><br>
+
+            <br>
+            <label for="date">Select start and End date of your teaching profession in previos institute:</label><br>
+            <input type="date" name="date" id="date3"><label for="date">Start date</label><br>
+            <input type="date" name="date" id="date4"><label for="date">End date</label>
+
+           
+            <p>Select the meeting Schedule:</p>
+            <label for="date">select the date:</label>
+            <input type="date" name="" id="">    
+
+            <br>
+            <label for="radio">Select your favorite color</label><br>
+            <input type="radio" name="Red" id="red">Red <br>
+            <input type="radio" name="blue" id="blue">Blue <br>
+            <input type="radio" name="green" id="green">Green <br>
+            <input type="radio" name="pink" id="pink">Pink <br>
+            
+            <br>
+            <label for="sports">Select your favorite sports</label><br>
+            
+            <input type="checkbox" name="cricket" id="cricket">cricket <br>
+            <input type="checkbox" name="tennis" id="tennis">Tennis <br>
+            <input type="checkbox" name="football" id="football">Football <br>
+            <input type="checkbox" name="baseball" id="baseball">Baseball <br>
+            <input type="checkbox" name="badminton" id="badminton">Badminton <br>
+            
+
+            <br>
+            <label for="country">Select Country: </label>
+            <select name="India" id="country">
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Japan">Japan</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="Address">Enter your Address:</label><br>
+            <input type="text" name="add" id="add" style="width: 150px; height: 40px"><br>
+            <br>
+            <button class="submit-button">Submit</button>
+            <button class="Click-button">Click me</button>       
+        </form>
+    </body>
+</html>
